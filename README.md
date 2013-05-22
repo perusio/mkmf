@@ -68,12 +68,13 @@ The calling syntax is:
  continuation lines as needed;
 
  `-m` makefile is the name of the makefile written (default Makefile);
-template is a file containing a list of make macros or commands
-written to the beginning of the makefile; program is the name of the
-final target (default a.out). A recent change in the behaviour of mkmf
-is that if program has the file extension .a, it is understood to be a
-library. The command to create it is \$(AR) \$(ARFLAGS) instead of
-\$(LD) \$(LDFLAGS).
+ 
+ `-t` template is a file containing a list of make macros or commands
+ written to the beginning of the makefile; program is the name of the
+ final target (default a.out). A recent change in the behaviour of mkmf
+ is that if program has the file extension .a, it is understood to be a
+ library. The command to create it is \$(AR) \$(ARFLAGS) instead of
+ \$(LD) \$(LDFLAGS).
 
  `-v` is a verbosity flag to mkmf;
 
